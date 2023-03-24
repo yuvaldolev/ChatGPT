@@ -13,6 +13,8 @@ import Head from "next/head";
 import { useEffect, useRef, useState } from "react";
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import { useTranslation } from "next-i18next";
+import chatApi from "@/utils/chatApi";
+import modelsApi from "@/utils/modelsApi";
 
 interface HomeProps {
   serverSideApiKeyIsSet: boolean;
@@ -62,22 +64,13 @@ const Home: React.FC<HomeProps> = ({ serverSideApiKeyIsSet }) => {
       setMessageIsStreaming(true);
       setMessageError(false);
 
-      const chatBody: ChatBody = {
-        model: updatedConversation.model,
-        messages: updatedConversation.messages,
-        key: apiKey,
-        prompt: updatedConversation.prompt
-      };
-
       const controller = new AbortController();
-      const response = await fetch("/api/chat", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json"
-        },
-        signal: controller.signal,
-        body: JSON.stringify(chatBody)
-      });
+      const response = await chatApi(
+        updatedConversation.model,
+        updatedConversation.messages,
+        apiKey,
+        updatedConversation.prompt
+      );
 
       if (!response.ok) {
         setLoading(false);
@@ -189,15 +182,7 @@ const Home: React.FC<HomeProps> = ({ serverSideApiKeyIsSet }) => {
       ]
     } as ErrorMessage;
 
-    const response = await fetch("/api/models", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json"
-      },
-      body: JSON.stringify({
-        key
-      })
-    });
+    const response = await modelsApi(key);
 
     if (!response.ok) {
       try {

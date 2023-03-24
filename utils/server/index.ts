@@ -56,8 +56,15 @@ export const OpenAIStream = async (model: OpenAIModel, systemPrompt: string, key
 
       const parser = createParser(onParse);
 
-      for await (const chunk of res.body as any) {
-        parser.feed(decoder.decode(chunk));
+      const reader = res.body!.getReader();
+      while (true) {
+        const { value, done } = await reader.read();
+
+        if (done) {
+          break;
+        }
+
+        parser.feed(decoder.decode(value));
       }
     }
   });

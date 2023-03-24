@@ -12,6 +12,8 @@
 /.next/
 /out/
 /dist
+/ios/
+/android/
 
 # production
 /build

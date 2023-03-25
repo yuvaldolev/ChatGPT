@@ -4,11 +4,15 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "next build && next export",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "tauri": "tauri"
   },
   "dependencies": {
+    "@capacitor/android": "^4.7.1",
+    "@capacitor/core": "^4.7.1",
+    "@capacitor/ios": "^4.7.1",
     "@dqbd/tiktoken": "^1.0.2",
     "@tabler/icons-react": "^2.9.0",
     "eventsource-parser": "^0.1.0",
@@ -24,7 +28,9 @@
     "remark-gfm": "^3.0.1"
   },
   "devDependencies": {
+    "@capacitor/cli": "^4.7.1",
     "@tailwindcss/typography": "^0.5.9",
+    "@tauri-apps/cli": "^1.2.3",
     "@types/react-syntax-highlighter": "^15.5.6",
     "autoprefixer": "^10.4.14",
     "postcss": "^8.4.21",

@@ -11,7 +11,6 @@ import { IconArrowBarLeft, IconArrowBarRight } from "@tabler/icons-react";
 import { GetServerSideProps } from "next";
 import Head from "next/head";
 import { useEffect, useRef, useState } from "react";
-import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import { useTranslation } from "next-i18next";
 import chatApi from "@/utils/chatApi";
 import modelsApi from "@/utils/modelsApi";

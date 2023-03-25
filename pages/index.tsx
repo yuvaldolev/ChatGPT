@@ -536,17 +536,3 @@ const Home: React.FC<HomeProps> = ({ serverSideApiKeyIsSet }) => {
   );
 };
 export default Home;
-
-export const getServerSideProps: GetServerSideProps = async ({ locale }) => {
-  return {
-    props: {
-      serverSideApiKeyIsSet: !!process.env.OPENAI_API_KEY,
-      ...(await serverSideTranslations(locale ?? 'en', [
-        'common',
-        'chat',
-        'sidebar',
-        'markdown',
-      ])),
-    }
-  };
-};

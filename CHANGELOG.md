@@ -2,6 +2,31 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.1.0](https://github.com/yuvaldolev/ChatGPT/compare/v1.0.0...v1.1.0) (2023-03-28)
+
+
+### Features
+
+* add Bahasa Indonesia support ([#198](https://github.com/yuvaldolev/ChatGPT/issues/198)) ([b0059fd](https://github.com/yuvaldolev/ChatGPT/commit/b0059fdf0d7adccbdc5c98ba9730ee99df6a34b2))
+* add in prettier and format code for consistency ([#168](https://github.com/yuvaldolev/ChatGPT/issues/168)) ([d6973b9](https://github.com/yuvaldolev/ChatGPT/commit/d6973b9cccb07b96ae732a1925b0e080a3bbd380))
+* bangla lang support ([#195](https://github.com/yuvaldolev/ChatGPT/issues/195)) ([831245c](https://github.com/yuvaldolev/ChatGPT/commit/831245c8371854001745ae212258224b08d2a1b2))
+* empty state add icons ([#248](https://github.com/yuvaldolev/ChatGPT/issues/248)) ([7c74df3](https://github.com/yuvaldolev/ChatGPT/commit/7c74df338ec00f4c35afe71076ba40a92e10c459))
+* export json format ([#185](https://github.com/yuvaldolev/ChatGPT/issues/185)) ([10354fb](https://github.com/yuvaldolev/ChatGPT/commit/10354fb29050e7633e6f9bda30b4fc43e6950263))
+* merge mckaywrigley/chatbot-ui/main ([dd79c6a](https://github.com/yuvaldolev/ChatGPT/commit/dd79c6ae6bd9f8947479cb5ed53cf3be1529d9dd))
+* Message copy button ([#171](https://github.com/yuvaldolev/ChatGPT/issues/171)) ([14fe29c](https://github.com/yuvaldolev/ChatGPT/commit/14fe29c03aeb6f737811055064803f71f3f731cd))
+
+
+### Bug Fixes
+
+* fix fonts ([#194](https://github.com/yuvaldolev/ChatGPT/issues/194)) ([c0b1b2e](https://github.com/yuvaldolev/ChatGPT/commit/c0b1b2eadba4f2b08dfdb5daea17a498dc46b338))
+* layout shifting on small devices ([#258](https://github.com/yuvaldolev/ChatGPT/issues/258)) ([abdcd45](https://github.com/yuvaldolev/ChatGPT/commit/abdcd4508da787605119af946b0a1f5b40d8b965))
+* missing translation ([#206](https://github.com/yuvaldolev/ChatGPT/issues/206)) ([bf8830e](https://github.com/yuvaldolev/ChatGPT/commit/bf8830e1a59ff89c1d7599449b8f62b9925599e7))
+* overlap between plus and prompt menu icon ([#230](https://github.com/yuvaldolev/ChatGPT/issues/230)) ([5aa5be3](https://github.com/yuvaldolev/ChatGPT/commit/5aa5be3f435981b053ee8cab7205b6107ff34dc5))
+* prompt sidebar not showing on small devices ([#232](https://github.com/yuvaldolev/ChatGPT/issues/232)) ([5d31947](https://github.com/yuvaldolev/ChatGPT/commit/5d31947ab9392a66378859576ee12720b793f8f5))
+* resolve Enter event conflict during CJK IME ([#253](https://github.com/yuvaldolev/ChatGPT/issues/253)) ([a73ef2b](https://github.com/yuvaldolev/ChatGPT/commit/a73ef2b8cf1dad6d4f1e78cb3b28f9d4e228c3f2))
+* update es translations ([#167](https://github.com/yuvaldolev/ChatGPT/issues/167)) ([e182762](https://github.com/yuvaldolev/ChatGPT/commit/e18276223b38e8e6c4b35ec9ce7456cb5e52734d))
+* website crash when typing / followed with non prompt name ([#262](https://github.com/yuvaldolev/ChatGPT/issues/262)) ([a70ae87](https://github.com/yuvaldolev/ChatGPT/commit/a70ae8799d692f20ca2a834f737db116fb587ca5))
+
 ## 1.0.0 (2023-03-25)
 
 

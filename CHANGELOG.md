@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.1.1](https://github.com/yuvaldolev/ChatGPT/compare/v1.1.0...v1.1.1) (2023-03-28)
+
+
+### Bug Fixes
+
+* fix package-lock.json missing dependencies ([30ebd19](https://github.com/yuvaldolev/ChatGPT/commit/30ebd19307b9c3a2fa5769a154fd84dfd5407e43))
+
 ## [1.1.0](https://github.com/yuvaldolev/ChatGPT/compare/v1.0.0...v1.1.0) (2023-03-28)
 
 

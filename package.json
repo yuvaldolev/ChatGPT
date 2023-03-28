@@ -7,7 +7,10 @@
     "build": "next build && next export && cap sync",
     "start": "next start",
     "lint": "next lint",
-    "tauri": "tauri"
+    "format": "prettier --write .",
+    "tauri": "tauri",
+    "test": "vitest",
+    "coverage": "vitest run --coverage"
   },
   "dependencies": {
     "@capacitor/android": "^4.7.1",
@@ -23,7 +26,10 @@
     "react-dom": "18.2.0",
     "react-markdown": "^8.0.5",
     "react-syntax-highlighter": "^15.5.0",
-    "remark-gfm": "^3.0.1"
+    "rehype-mathjax": "^4.0.2",
+    "remark-gfm": "^3.0.1",
+    "remark-math": "^5.1.1",
+    "uuid": "^9.0.0"
   },
   "devDependencies": {
     "@capacitor/cli": "^4.7.1",
@@ -33,11 +39,18 @@
     "@types/react": "18.0.28",
     "@types/react-dom": "18.0.11",
     "@types/react-syntax-highlighter": "^15.5.6",
+    "@types/uuid": "^9.0.1",
+    "@vitest/coverage-c8": "^0.29.7",
     "autoprefixer": "^10.4.14",
     "eslint": "8.36.0",
     "eslint-config-next": "13.2.4",
     "postcss": "^8.4.21",
     "tailwindcss": "^3.2.7",
-    "typescript": "4.9.5"
+    "typescript": "4.9.5",
+    "prettier": "^2.8.7",
+    "prettier-plugin-tailwindcss": "^0.2.5",
+    "tailwindcss": "^3.2.7",
+    "typescript": "4.9.5",
+    "vitest": "^0.29.7"
   }
 }

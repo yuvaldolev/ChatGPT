@@ -1,4 +1,4 @@
-import { OpenAIModel, OpenAIModelID, OpenAIModels } from "@/types";
+import { OpenAIModel, OpenAIModelID, OpenAIModels } from "@/types/openai";
 
 const api = async (key: string): Promise<Response> => {
   try {

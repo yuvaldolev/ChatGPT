@@ -1,4 +1,5 @@
-import { Message, OpenAIModel, OpenAIModelID } from "@/types";
+import { Message } from "@/types/chat";
+import { OpenAIModel, OpenAIModelID } from "@/types/openai";
 import { DEFAULT_SYSTEM_PROMPT } from "@/utils/app/const";
 import { OpenAIStream } from "@/utils/server";
 import tiktokenModel from "@dqbd/tiktoken/encoders/cl100k_base.json";
